@@ -1,0 +1,79 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header .logo h1 {
+    color: #8b6f4e;
+  }
+  
+  .header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .header nav ul li {
+    margin: 0 15px;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .book-room {
+    background: #8b6f4e;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  .hero .hero-content {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .hero .hero-content h2 {
+    font-size: 3rem;
+    color: #8b6f4e;
+  }
+  
+  .hero .hero-content p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
