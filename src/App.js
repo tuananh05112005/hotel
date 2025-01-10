@@ -1,40 +1,21 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import About from './pages/About'; // Import trang About
+import Home from './pages/Home'; // Ví dụ import Home
+import Header from './components/Header'; // Import Navbar
+import Footer from './components/Footer'; // Import Footer
 
-import React from "react";
-import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import AboutSection from "./components/AboutSection";
-import RoomsSection from "./components/RoomsDouble";
-import RoomView from "./components/RoomView"
-import RoomSingle from "./components/RoomSingle"
-import Foodview from "./components/Foodview"
-import Description from "./components/HotelSection"
-import Blog from "./components/Blog"
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-
-
-
-
-
-// import "./styles.css";
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Header />
-      <Navbar />
-
-      <HeroSection />
-      <AboutSection />
-      <RoomSingle />
-      <RoomsSection />
-      <RoomView />
-      <Foodview />
-      <Description />
-      <Blog />
+      <Routes>
+        <Route path="/" element={<Home />} />       {/* Trang chủ */}
+        <Route path="/about" element={<About />} /> {/* Trang About */}
+      </Routes>
       <Footer />
-   
-    </div>
+    </Router>
   );
 }
 

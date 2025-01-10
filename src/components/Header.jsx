@@ -1,11 +1,17 @@
-import { 
-  Disclosure, DisclosureButton, DisclosurePanel, 
-  Menu, MenuButton, MenuItem, MenuItems 
+import {
+  Disclosure, DisclosureButton, DisclosurePanel,
+  Menu, MenuButton, MenuItem, MenuItems
 } from '@headlessui/react';
-import { 
-  Bars3Icon, BellIcon, XMarkIcon, ChevronDownIcon 
+import {
+  Bars3Icon, BellIcon,
+  ChevronDownIcon,
+  XMarkIcon
 } from '@heroicons/react/24/outline';
-
+import { Route, Routes } from 'react-router-dom';
+import About from '../pages/About';
+<Routes>
+<Route path="/about" element={<About/>} />
+</Routes>
 
 
 const navigation = [
