@@ -3,8 +3,8 @@ import { Eye, ShoppingCart } from 'lucide-react';
 
 const MenuData = {
   'mon-an': [
-    { id: 1, name: 'MÌ XÀOÀO BÒ', price: 80000, originalPrice: 100000, discount: 20, image: 'assets/f1.webp' },
-    { id: 2, name: 'BÚN XÀOÀO THỊT HEO', price: 75000, originalPrice: 90000, discount: 17, image: 'assets/f2.webp' },
+    { id: 1, name: 'MÌ XÀO BÒ', price: 80000, originalPrice: 100000, discount: 20, image: 'assets/f1.webp' },
+    { id: 2, name: 'BÚN XÀO THỊT HEO', price: 75000, originalPrice: 90000, discount: 17, image: 'assets/f2.webp' },
     { id: 3, name: 'BÚN BÒ HUẾ', price: 95000, originalPrice: 100000, discount: 5, image: 'assets/f3.webp' },
     { id: 4, name: 'MÌ XÀO THỊT HEO', price: 85000, originalPrice: 97000, discount: 12, image: 'assets/f4.webp' },
     { id: 5, name: 'BÁNH MÌ ỐP LA TRỨNG', price: 40000, originalPrice: 40000, discount: 0, image: 'assets/f5.webp' },
