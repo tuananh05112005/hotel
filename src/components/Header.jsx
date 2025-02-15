@@ -8,7 +8,7 @@ import {
   ChevronDownIcon,
   XMarkIcon
 } from '@heroicons/react/24/outline';
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 
 
 
@@ -45,19 +45,19 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-  const [user, setUser] = useState(null);
+  // const [user, setUser] = useState(null);
 
-  useEffect(() => {
-    const storedUser = localStorage.getItem('user');
-    setUser(storedUser ? JSON.parse(storedUser) : null);
-  }, []);
+  // useEffect(() => {
+  //   const storedUser = localStorage.getItem('user');
+  //   setUser(storedUser ? JSON.parse(storedUser) : null);
+  // }, []);
 
-  const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('user');
-    setUser(null);
-    window.location.href = "/login"; // Chuyển hướng về trang đăng nhập
-  };
+  // const handleLogout = () => {
+  //   localStorage.removeItem('token');
+  //   localStorage.removeItem('user');
+  //   setUser(null);
+  //   window.location.href = "/login"; // Chuyển hướng về trang đăng nhập
+  // };
   return (
     <Disclosure as="nav" className="bg-white shadow-sm sticky top-0 z-50">
       {({ open }) => (
@@ -129,7 +129,7 @@ export default function Navbar() {
                   <MenuButton className="flex rounded-full ring-1 ring-gray-200 hover:ring-gray-300 transition-all duration-200">
                     <img
                       alt="User"
-                      src="assets/a.jpg"
+                      src="/assets/a.jpg"
                       className="size-8 rounded-full"
                     />
                   </MenuButton>
